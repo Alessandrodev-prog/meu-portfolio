@@ -1,1 +1,1 @@
-console.log("Portfólio nível contratação carregado!");
+console.log("Portfólio 100% funcional carregado!");
