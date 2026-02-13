@@ -1,118 +1,67 @@
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:'Segoe UI',sans-serif;
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial;
 }
 
 body{
-    background:linear-gradient(135deg,#0f172a,#020617);
-    color:white;
+background:linear-gradient(135deg,#0f172a,#1e293b);
+color:white;
+min-height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
 }
-
-/* HEADER */
 
 header{
-    text-align:center;
-    padding:80px 20px;
+margin-bottom:40px;
 }
 
-.nome{
-    font-size:42px;
-    text-transform:uppercase;
-    background:linear-gradient(90deg,#3b82f6,#a855f7);
-    -webkit-background-clip:text;
-    -webkit-text-fill-color:transparent;
+.menu{
+display:flex;
+flex-direction:column;
+gap:15px;
+margin-bottom:40px;
 }
 
-.descricao{
-    margin-top:12px;
-    color:#cbd5e1;
-    font-size:18px;
+.menu a{
+display:block;
+width:260px;
+padding:14px;
+background:#3b82f6;
+border-radius:10px;
+color:white;
+text-decoration:none;
+font-weight:bold;
+transition:0.3s;
 }
 
-/* CONTATO */
+.menu a:hover{
+transform:scale(1.05);
+}
 
 .contato{
-    margin-top:20px;
+background:white;
+color:#333;
+padding:25px;
+border-radius:14px;
+width:280px;
 }
 
-.telefone{
-    font-weight:bold;
-    color:#38bdf8;
+.whatsapp{
+display:block;
+background:#25D366;
+color:white;
+padding:14px;
+border-radius:10px;
+text-decoration:none;
+font-weight:bold;
+margin-bottom:10px;
 }
-
-/* BOTÃO */
-
-.whatsapp-btn{
-    display:inline-block;
-    margin-top:14px;
-    padding:14px 28px;
-    background:#25D366;
-    color:white;
-    font-weight:bold;
-    border-radius:14px;
-    text-decoration:none;
-    transition:0.35s;
-    box-shadow:0 10px 25px rgba(0,0,0,0.4);
-}
-
-.whatsapp-btn:hover{
-    transform:scale(1.08);
-    background:#1ebe5d;
-}
-
-/* PROJETOS */
-
-.projetos{
-    text-align:center;
-    padding:60px 20px;
-}
-
-.container{
-    display:flex;
-    flex-wrap:wrap;
-    justify-content:center;
-    gap:40px;
-    margin-top:50px;
-}
-
-/* CARDS */
-
-.card{
-    background:rgba(255,255,255,0.04);
-    backdrop-filter:blur(14px);
-    padding:30px;
-    width:280px;
-    border-radius:20px;
-    transition:0.4s;
-    box-shadow:0 15px 40px rgba(0,0,0,0.6);
-}
-
-.card:hover{
-    transform:translateY(-14px) scale(1.04);
-}
-
-.card a{
-    display:inline-block;
-    margin-top:20px;
-    padding:12px 22px;
-    background:#3b82f6;
-    border-radius:12px;
-    color:white;
-    text-decoration:none;
-    font-weight:bold;
-    transition:0.3s;
-}
-
-.card a:hover{
-    background:#2563eb;
-}
-
-/* FOOTER */
 
 footer{
-    text-align:center;
-    padding:40px;
-    color:#94a3b8;
+margin-top:30px;
 }
