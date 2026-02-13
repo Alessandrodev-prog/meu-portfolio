@@ -1,1 +1,1 @@
-console.log("Portfólio 100% funcional carregado!");
+console.log("Portfólio carregado — estrutura profissional ativa.");
