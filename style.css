@@ -2,154 +2,100 @@
     margin:0;
     padding:0;
     box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
 }
 
 body{
-    font-family:'Inter',sans-serif;
-    background:linear-gradient(135deg,#0f172a,#020617);
+    background:linear-gradient(135deg,#0f172a,#1e293b);
     color:white;
 }
 
-/* HERO */
+.nome{
+    font-size:40px;
+    text-transform:uppercase;
+    background:linear-gradient(90deg,#3b82f6,#9333ea);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
 
-.hero{
-    min-height:100vh;
-    display:flex;
-    align-items:center;
-    justify-content:center;
+header{
     text-align:center;
-    padding:40px;
+    padding:70px 20px;
 }
 
-.hero-content{
-    backdrop-filter:blur(14px);
-    background:rgba(255,255,255,0.05);
-    padding:50px;
-    border-radius:20px;
-    box-shadow:0 20px 60px rgba(0,0,0,.5);
-    animation:fadeUp 1s ease;
-}
-
-h1{
-    font-size:42px;
-    letter-spacing:1px;
-}
-
-.subtitle{
-    margin-top:15px;
+.descricao{
+    margin-top:10px;
     color:#cbd5e1;
     font-size:18px;
 }
 
-.phone{
-    margin-top:8px;
+.contato{
+    margin-top:18px;
+}
+
+.telefone{
+    font-weight:bold;
     color:#38bdf8;
-    font-weight:600;
 }
 
-/* WHATSAPP */
-
-.whatsapp{
+.whatsapp-btn{
     display:inline-block;
-    margin-top:25px;
-    padding:14px 26px;
-    border-radius:10px;
-    text-decoration:none;
+    margin-top:12px;
+    padding:13px 26px;
+    background:#25D366;
     color:white;
-    font-weight:600;
-    background:linear-gradient(90deg,#22c55e,#16a34a);
-    transition:.3s;
+    font-weight:bold;
+    border-radius:12px;
+    text-decoration:none;
+    transition:0.3s;
+    box-shadow:0 8px 20px rgba(0,0,0,0.3);
 }
 
-.whatsapp:hover{
-    transform:scale(1.05);
+.whatsapp-btn:hover{
+    background:#1ebe5d;
+    transform:scale(1.07);
 }
 
-/* SKILLS */
-
-.skills{
-    padding:80px 20px;
+.projetos{
     text-align:center;
+    padding:50px;
 }
 
-.skills-grid{
-    margin-top:40px;
+.container{
     display:flex;
     flex-wrap:wrap;
-    gap:20px;
     justify-content:center;
-}
-
-.skill{
-    padding:14px 22px;
-    border-radius:12px;
-    background:rgba(255,255,255,.06);
-    transition:.3s;
-}
-
-.skill:hover{
-    transform:translateY(-6px);
-}
-
-/* PROJETOS */
-
-.projects{
-    padding:80px 20px;
-    text-align:center;
-}
-
-.projects-grid{
-    margin-top:50px;
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-    gap:30px;
+    gap:35px;
+    margin-top:40px;
 }
 
 .card{
-    text-decoration:none;
-    color:white;
-    padding:30px;
-    border-radius:18px;
-    background:rgba(255,255,255,.05);
+    background:rgba(255,255,255,0.05);
     backdrop-filter:blur(12px);
-    transition:.35s;
+    padding:28px;
+    width:270px;
+    border-radius:18px;
+    transition:0.35s;
+    box-shadow:0 10px 35px rgba(0,0,0,0.5);
 }
 
 .card:hover{
-    transform:translateY(-10px);
-    box-shadow:0 20px 40px rgba(0,0,0,.6);
+    transform:translateY(-12px) scale(1.03);
 }
 
-/* FOOTER */
+.card a{
+    display:inline-block;
+    margin-top:18px;
+    padding:11px 20px;
+    background:#3b82f6;
+    border-radius:10px;
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+}
 
 footer{
-    padding:40px;
     text-align:center;
+    padding:35px;
     color:#94a3b8;
-}
-
-/* ANIMAÇÃO */
-
-@keyframes fadeUp{
-    from{
-        opacity:0;
-        transform:translateY(40px);
-    }
-    to{
-        opacity:1;
-        transform:translateY(0);
-    }
-}
-
-/* RESPONSIVO */
-
-@media(max-width:600px){
-
-    h1{
-        font-size:28px;
-    }
-
-    .hero-content{
-        padding:30px;
-    }
 }
